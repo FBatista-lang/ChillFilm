@@ -3,13 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChillFilm.WebApi", "ChillFilm\ChillFilm.WebApi.csproj", "{1572EC59-86A3-43D7-A737-8C8BDAFE09B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChillFilm.WebApi", "ChillFilm\ChillFilm.WebApi.csproj", "{1572EC59-86A3-43D7-A737-8C8BDAFE09B1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FC9A1FB-CB55-4406-A929-78B4EC6305EE} = {4FC9A1FB-CB55-4406-A929-78B4EC6305EE}
+		{62EA749F-FBFE-4A59-8850-038FE9EAD472} = {62EA749F-FBFE-4A59-8850-038FE9EAD472}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChillFilm.Application", "ChillFilm.Application\ChillFilm.Application.csproj", "{62EA749F-FBFE-4A59-8850-038FE9EAD472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChillFilm.Application", "ChillFilm.Application\ChillFilm.Application.csproj", "{62EA749F-FBFE-4A59-8850-038FE9EAD472}"
+	ProjectSection(ProjectDependencies) = postProject
+		{31356D71-D57E-428C-838D-E5E611ACB093} = {31356D71-D57E-428C-838D-E5E611ACB093}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChillFilm.Domain", "ChillFilm.Domain\ChillFilm.Domain.csproj", "{31356D71-D57E-428C-838D-E5E611ACB093}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChillFilm.Domain", "ChillFilm.Domain\ChillFilm.Domain.csproj", "{31356D71-D57E-428C-838D-E5E611ACB093}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChillFilm.Infrastructure", "ChillFilm.Infrastructure\ChillFilm.Infrastructure.csproj", "{4FC9A1FB-CB55-4406-A929-78B4EC6305EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChillFilm.Infrastructure", "ChillFilm.Infrastructure\ChillFilm.Infrastructure.csproj", "{4FC9A1FB-CB55-4406-A929-78B4EC6305EE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{31356D71-D57E-428C-838D-E5E611ACB093} = {31356D71-D57E-428C-838D-E5E611ACB093}
+		{62EA749F-FBFE-4A59-8850-038FE9EAD472} = {62EA749F-FBFE-4A59-8850-038FE9EAD472}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
